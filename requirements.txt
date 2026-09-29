@@ -1,0 +1,12 @@
+# Laptop-side dependencies. Training libraries (Unsloth, bitsandbytes, ...)
+# are installed only inside Colab, never here.
+pandas
+faker
+lxml
+pydantic>=2
+python-dotenv
+anthropic
+gradio
+pytest
+ruff
+pre-commit

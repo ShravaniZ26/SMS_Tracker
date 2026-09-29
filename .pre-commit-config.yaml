@@ -1,0 +1,15 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.16.3
+    hooks:
+      - id: ruff-check
+      - id: ruff-format
+  - repo: local
+    hooks:
+      # Safety net: refuse any commit that touches the private data folders,
+      # even if .gitignore is bypassed with `git add -f`.
+      - id: block-private-data
+        name: Block real SMS data
+        entry: Real SMS data must not be committed
+        language: fail
+        files: ^data/(raw|real)/
