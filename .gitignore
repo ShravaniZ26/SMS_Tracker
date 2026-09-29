@@ -1,0 +1,32 @@
+# Private data — never commit
+data/raw/
+data/real/
+*.xml
+
+# Secrets
+.env
+
+# Models and large files
+models/
+*.gguf
+*.safetensors
+outputs/
+wandb/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
+~$*
