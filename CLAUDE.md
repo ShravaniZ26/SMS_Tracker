@@ -23,4 +23,4 @@ and compare it with regex and a large API model.
 - Don't install new packages without asking; add approved ones to requirements.txt
 
 ## Current phase
-[Week 1 — P1 Schema]
+[Week 2 — P2 Real data]
